@@ -59,6 +59,8 @@ public class MinitouchAgent extends Thread {
     private MotionEvent.PointerCoords[] pointerCoords = new MotionEvent.PointerCoords[2];
     private PointerEvent[] events = new PointerEvent[2];
 
+    private int m_num_pointers[] = new int[]{0, 0};
+
     private final InputManagerWrapper inputManager;
     private final WindowManagerWrapper windowManager;
     private final Handler handler;
